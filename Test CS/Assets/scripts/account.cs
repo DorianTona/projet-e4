@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 
-public class script_account : MonoBehaviour {
+public class account : MonoBehaviour {
 
 	string photoPath = "";
 	string nom = "";

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class script_spider : MonoBehaviour {
+public class spider : MonoBehaviour {
 
 	public int nbpoints;
 	private float angle;

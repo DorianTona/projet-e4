@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class script_test_polop : MonoBehaviour {
+public class test_polop : MonoBehaviour {
 
 	public string urlducul = "http://192.168.43.35/SampleSQL/database_cs_SetProfil.php";
 	public UILabel lelabel;
@@ -17,16 +17,16 @@ public class script_test_polop : MonoBehaviour {
 		
 	}
 
-	public void test_polop(){
+	public void tresLeTest(){
 		StartCoroutine (leEnum ());
 	}
 
 	private IEnumerator leEnum(){
 		WWWForm setform = new WWWForm();
-		setform.AddField ("set_Nom", "benis");
-		setform.AddField ("set_Prenom", "benis");
-		setform.AddField ("set_Identifiant", "benis");
-		setform.AddField ("set_Mdp", "benis");
+		setform.AddField ("set_Nom", "Dupont");
+		setform.AddField ("set_Prenom", "Alfred");
+		setform.AddField ("set_Identifiant", "xXx_D4RKS4ZUKE_xXx");
+		setform.AddField ("set_Mdp", "0000");
 
 		WWW database = new WWW (urlducul, setform);
 		yield return database;
